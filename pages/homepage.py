@@ -13,8 +13,8 @@ layout = html.Div([
                 html.Div(
                     className='user-options',
                     children=[
-                        html.A('Login', href='#', className='login-link'),
-                        html.A('Sign up', href='#', className='signup-link')
+                        html.A('Login', href='#', className='login-link', style={'color':'white'}),
+                        html.A('Sign up', href='#', className='signup-link', style={'color':'white'})
                     ]
                 ),
 
