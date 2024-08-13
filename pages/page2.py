@@ -2,13 +2,15 @@ import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output
 import pandas as pd
-from dash import dash_table
+import dash_table
 
+data = pd.read_csv('./data/zomato.csv', encoding = 'ISO-8859-1')
+print(data['Restaurant Name'].head(1))
 
 
 delivery_layout =html.Div(children =[
     dcc.Link(html.Img(
-                    src='/assets/images/bcn.png',
+                    src='/assets/logo.png',
                     style={'height': '50px', 'marginRight': 'auto'}
                 ), href = '/home'),
     html.Div(children= [dcc.Link(html.Img(
