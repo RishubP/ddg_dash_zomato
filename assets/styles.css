@@ -1,0 +1,72 @@
+/* assets/styles.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+#header {
+    display: flex;
+    height: 400px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    height: 40px;
+}
+
+.search-bar {
+    flex: 1;
+    margin: 0 30px;
+}
+
+.search-bar input {
+    width: 100%;
+    position: top;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+}
+
+.user-options a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#main-content {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.location-selector {
+    margin: 20px 0;
+}
+
+#cuisines {
+    margin: 50px 0 20px 0;
+}
+
+#cuisine-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#cuisine-list li {
+    margin: 0 15px;
+    padding: 10px 15px;
+    background-color: #ff6666;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cuisine-list li:hover {
+    background-color: #e55d5d;
+}

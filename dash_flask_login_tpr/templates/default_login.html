@@ -1,0 +1,36 @@
+<head>
+	<link rel="stylesheet" href="https://codepen.io/chriddyp/pen/bWLwgP.css">
+	<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+	<title>Zomato Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<!-- <!edit_avon.png> -->
+{% block body %}
+<body id='login_page' style="
+	background-image: url('/assets/images/gidance.jpg');
+	background-size: cover;
+	font-size: 0.9vw;
+	
+">
+ <div id="login-div" style="margin: auto; width: 36.46vw; position: absolute; left: 32vw; top: 9.18vh;">
+
+	<div style="height: 83.9vh; width: 36.46vw; background-color: white; display: inline-block; box-shadow: rgba(113, 87, 87, 0.25) 0px 0px 8px;">
+	<img src='https://b.zmtcdn.com/images/logo/zomato_flat_bg_logo.svg' style="height: 14vh; width: 80%; position: relative; top: 10.38vh; left: 3.85vw; display: inline-block;">
+	  <form method=post>
+	  
+	  <input id="uname-box" type="text" name=username placeholder="Username" value="{{request.form.username }}" style="width: 18.75vw; height: 5.19vh; position: absolute;
+	  top: 31.58vh;left: 9.37vw;  padding: 0.5vh 0.5vw;  display: inline-block; border: 0px; border-radius: 0.52vh 0.26vw; background-color: #f2f2f2;">
+	  <input id="pwd-box" type="password" name=password placeholder="Password" style="width: 18.75vw; height: 5.19vh; position: absolute;top: 38.58vh; left: 9.37vw;
+	  display: inline-block;  padding: 0.5vh 0.5vw; border: 0px; border-radius: 0.52vh 0.26vw; background-color: #f2f2f2;"> 
+	  
+	  <p><input id=login-button type=submit value=Login style="width:18.75vw;height:7.27vh;font: normal normal normal 1.87vmin/2.59vmin arial; text-transform: none; letter-spacing: 0px;
+	  font-family: arial;border: 0px; color: white; background-color: rgb(204, 0, 0); border-radius: 0.52vh 0.26vw; position: absolute; top: 49.69vh; left: 9.37vw;"></p>
+	  <h6 id="forgot_password" style="position: absolute;height: 2.2vh; margin-bottom: 0.75vh;text-align: center; margin-top: 0.75vh;width: 7.6vw; top: 58vh; left: 15.37vw; font: normal normal normal 1.87vmin/2.59vmin arial; color: #999999;">Forgot password?</h6>
+	  <img src="/assets/images/logo_red_bain.svg" style=" height: 4.15vh; width: 18.9vw; position: absolute; top: 71.46vh; left: 10.47vw; display: inline-block;">
+	</form>
+	</div>
+	</div>
+
+    </div>
+</body>
+{% endblock %}
