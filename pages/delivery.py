@@ -5,36 +5,36 @@ import pandas as pd
 import dash_table
 
 data = pd.read_csv('./data/zomato.csv', encoding = 'ISO-8859-1')
-print(data['Restaurant Name'].head(1))
+# print(data['Restaurant Name'].head(1))
 
 
 delivery_layout =html.Div(children =[
     dcc.Link(html.Img(
-                    src='/assets/logo.png',
+                    src='/assets/images/logo.png',
                     style={'height': '50px', 'marginRight': 'auto'}
                 ), href = '/home'),
     html.Div(children= [dcc.Link(html.Img(
-                    src='/assets/pizza.jpg',
+                    src='/assets/images/pizza.jpg',
                     style={'height': '100px', 'padding':'10px'})
                 , href ='/pizza'),
                 dcc.Link(html.Img(
-                    src='/assets/burger.jpg',
+                    src='/assets/images/burger.jpg',
                     style={'height': '100px','padding':'10px'})
                 ,href = '/burger'),
                 dcc.Link(html.Img(
-                    src='/assets/indian.jpg',
+                    src='/assets/images/indian.jpg',
                     style={'height': '100px','padding':'10px'})
                 , href ='/Indian'),
                 dcc.Link(html.Img(
-                    src='/assets/sushi.jpg',
+                    src='/assets/images/sushi.jpg',
                     style={'height': '100px','padding':'10px'})
                 , href ='/sushi'),
                 dcc.Link(html.Img(
-                    src='/assets/seafood.jpg',
+                    src='/assets/images/seafood.jpg',
                     style={'height': '100px','padding':'10px'})
                 , href ='/seafood'),
                 dcc.Link(html.Img(
-                    src='/assets/pasta.jpg',
+                    src='/assets/images/pasta.jpg',
                     style={'height': '100px','padding':'10px'})
                 , href ='/pasta')], 
                 style={'height':'100px','display':'flex','padding':'50px', 'textAlign':'center','marginLeft':'400px'}),
