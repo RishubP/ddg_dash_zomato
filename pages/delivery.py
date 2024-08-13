@@ -13,34 +13,37 @@ delivery_layout =html.Div(children =[
                     src='/assets/images/logo.png',
                     style={'height': '50px', 'marginRight': 'auto'}
                 ), href = '/home'),
+    html.Div(children=[
+    html.Div('Inspiration for your first order', style={'textAlign':'center', 'fontSize':'20px'}),
     html.Div(children= [dcc.Link(html.Img(
                     src='/assets/images/pizza.jpg',
-                    style={'height': '100px', 'padding':'10px'})
+                    style={'height': '150px', 'width':'150px','padding':'25px', 'borderRadius':'50%'})
                 , href ='/pizza'),
                 dcc.Link(html.Img(
                     src='/assets/images/burger.jpg',
-                    style={'height': '100px','padding':'10px'})
+                    style={'height': '150px', 'width':'150px','padding':'25px', 'borderRadius':'50%'})
                 ,href = '/burger'),
                 dcc.Link(html.Img(
                     src='/assets/images/indian.jpg',
-                    style={'height': '100px','padding':'10px'})
+                    style={'height': '150px', 'width':'150px','padding':'25px', 'borderRadius':'50%'})
                 , href ='/Indian'),
                 dcc.Link(html.Img(
                     src='/assets/images/sushi.jpg',
-                    style={'height': '100px','padding':'10px'})
+                    style={'height': '150px', 'width':'150px','padding':'25px', 'borderRadius':'50%'})
                 , href ='/sushi'),
                 dcc.Link(html.Img(
                     src='/assets/images/seafood.jpg',
-                    style={'height': '100px','padding':'10px'})
+                    style={'height': '150px', 'width':'150px','padding':'25px', 'borderRadius':'50%'})
                 , href ='/seafood'),
                 dcc.Link(html.Img(
                     src='/assets/images/pasta.jpg',
-                    style={'height': '100px','padding':'10px'})
+                    style={'height': '150px', 'width':'150px','padding':'25px', 'borderRadius':'50%'})
                 , href ='/pasta')], 
-                style={'height':'100px','display':'flex','padding':'50px', 'textAlign':'center','marginLeft':'400px'}),
+                style={'height':'200px','display':'flex','padding':'50px', 'textAlign':'center','marginLeft':'300px'})],
+                style={'marginTop':'20px','backgroundColor':'white'}),
                 html.Div(
     children=[
-        html.H1('Delivery Restaurants', style ={'textAlign':'center', 'display':'flex','justifyContent':'center', 'fontColor':'red'}),
+        html.H1('Delivery Restaurants', style ={'textAlign':'center', 'display':'flex','justifyContent':'center', 'fontColor':'Grey'}),
             dcc.Input(
                 id='delivery_search',
                 type='text',
