@@ -34,6 +34,7 @@ body {
 
 .search-bar input {
     width: 100%;
+    position: top;
     padding: 10px;
     border: 1px solid #e0e0e0;
     border-radius: 3px;
@@ -82,12 +83,3 @@ body {
 #cuisine-list li:hover {
     background-color: #e55d5d;
 }
-/*
-.vertical-container {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    gap: 20px;
-}
-*/

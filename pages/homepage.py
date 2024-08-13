@@ -67,7 +67,51 @@ layout = html.Div([
                         ]
                     )
                 ]
-            )
+            ),
+            html.Div(
+            children=[
+                html.Div(
+                    children=[
+                        dcc.Link(
+                            html.Button(
+                                'Delivery',
+                                id='delivery_button',
+                                style={'fontSize': '24px', 'backgroundColor': '#fafafa', 'padding': '80px 200px', 'border': 'None'}
+                            ),
+                            href='/Delivery'
+                        )
+                    ],
+                    style={'textAlign': 'center', 'margin': '10px', 'backgroundImage': 'url("/assets/del.jpg")', 'backgroundSize': 'cover', 'backgroundRepeat': 'no-repeat'}
+                ),
+                html.Div(
+                    children=[
+                        dcc.Link(
+                            html.Button(
+                                'Dining',
+                                id='dining_button',
+                                style={'fontSize': '24px', 'backgroundColor': '#fafafa', 'padding': '80px 200px', 'border': 'None'}
+                            ),
+                            href='/Dining'
+                        )
+                    ],
+                    style={'textAlign': 'center', 'margin': '10px', 'backgroundImage': 'url("/assets/dine.jpg")', 'backgroundSize': 'cover', 'backgroundRepeat': 'no-repeat'}
+                ),
+                html.Div(
+                    children=[
+                        dcc.Link(
+                            html.Button(
+                                'Live Events',
+                                id='events_button',
+                                style={'fontSize': '24px', 'backgroundColor': '#fafafa', 'padding': '80px 200px', 'border': 'None'}
+                            ),
+                            href='/Live'
+                        )
+                    ],
+                    style={'textAlign': 'center', 'margin': '10px', 'backgroundImage': 'url("/assets/live.jpg")', 'backgroundSize': 'cover', 'backgroundRepeat': 'no-repeat'}
+                )
+            ],
+            style={'justifyContent': 'center', 'marginTop': '50px', 'alignItems': 'center', 'display': 'flex'}
+        )
         ]
     )
 ])
