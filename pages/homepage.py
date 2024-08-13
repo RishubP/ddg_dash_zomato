@@ -10,22 +10,29 @@ layout = html.Div([
         # 'height': '100%'  # Adjust the height as needed
         },
         children=[
-            html.Div(
-                className='logo',
-                children=html.Img(src='https://b.zmtcdn.com/images/logo/zomato_flat_bg_logo.svg', height='50px')
-            ),
-            html.Div(
-                className='search-bar',
-                children=dcc.Input(id='search-input', type='text', placeholder='Search for restaurant, cuisine or a dish')
-            ),
-            html.Div(
-                className='user-options',
-                children=[
-                    html.A('Login', href='#', className='login-link'),
-                    html.A('Sign up', href='#', className='signup-link')
-                ]
-            )
-        ]
+                html.Div(
+                    className='user-options',
+                    children=[
+                        html.A('Login', href='#', className='login-link'),
+                        html.A('Sign up', href='#', className='signup-link')
+                    ]
+                ),
+
+            #   children=html.Img(src='https://b.zmtcdn.com/images/logo/zomato_flat_bg_logo.svg', height='50px')
+
+                html.Div(
+                    className='logo',
+                    children=html.Img(src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png", height='50px')
+                ),
+                html.Div(
+                    className='discover-text',
+                    children=html.H1("Discover the best food & drinks in ")
+                ),
+                html.Div(
+                    className='search-bar',
+                    children=dcc.Input(id='search-input', type='text', placeholder='Search for restaurant, cuisine or a dish')
+                ),
+            ]
     ),
     html.Div(
         id='main-content',

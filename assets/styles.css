@@ -8,25 +8,32 @@ body {
 
 #header {
     display: flex;
+    flex-direction: column;
+    gap: 50px;
     height: 400px;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+.discover-text{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
 
 .logo img {
-    height: 40px;
+    height: 60px;
 }
 
 .search-bar {
     flex: 1;
     margin: 0 30px;
+    width: 30rem; 
 }
 
 .search-bar input {
     width: 100%;
-    position: top;
     padding: 10px;
     border: 1px solid #e0e0e0;
     border-radius: 3px;
@@ -70,3 +77,12 @@ body {
 #cuisine-list li:hover {
     background-color: #e55d5d;
 }
+/*
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+}
+*/
