@@ -66,41 +66,68 @@ layout = html.Div([
                 html.Div(
                     children=[
                         dcc.Link(
+                            html.Div(children =[
                             html.Button(
-                                'Delivery',
+                                '',
                                 id='delivery_button',
-                                style={'fontSize': '24px', 'backgroundColor': '#fafafa', 'padding': '80px 200px', 'border': 'None'}
+                                style={'fontSize': '24px', 'backgroundColor': '#fafafa',
+                                       'backgroundImage': 'url("/assets/images/del.jpg")', 
+                                       'backgroundSize': 'cover', 'backgroundRepeat': 'no-repeat', 'padding': '150px 150px', 'border': 'None','borderRadius':'20px',
+                                       'textAlign': 'left', 'verticalAlign':'top'}
                             ),
+                            html.Div('Deliver food at home',
+                                     style={'fontSize':'16px', 'fontColor':'Red', 'textDecoration':'none'})],
+                                     style={'padding':'5px', 'border':'2px solid grey',
+                                            'borderRadius':'10px', 'textDecoration':'none',
+                                            'fontWeight':'bold'}),
                             href='/Delivery'
                         )
                     ],
-                    style={'textAlign': 'center', 'margin': '10px', 'backgroundImage': 'url("/assets/del.jpg")', 'backgroundSize': 'cover', 'backgroundRepeat': 'no-repeat'}
+                    style={'textAlign': 'center', 'margin': '10px', 'alignItems':'flexStart' }
                 ),
                 html.Div(
                     children=[
                         dcc.Link(
+                            html.Div(children = [
                             html.Button(
-                                'Dining',
+                                '',
                                 id='dining_button',
-                                style={'fontSize': '24px', 'backgroundColor': '#fafafa', 'padding': '80px 200px', 'border': 'None'}
-                            ),
+                                style={'fontSize': '24px', 'backgroundColor': '#fafafa', 
+                                        'backgroundImage': 'url("/assets/images/dine.jpg")', 'backgroundSize': 'cover', 'backgroundRepeat': 'no-repeat',
+                                        'padding': '150px 150px', 'border': 'None','borderRadius':'20px'}
+                            )
+                            ,
+                        html.Div('Favourite dining venues of the city',
+                                 style={'fontSize':'16px', 'fontColor':'Red', 'textDecoration':'none'})
+                        ], 
+                        style={'padding':'5px', 'border':'2px solid grey',
+                                            'borderRadius':'20px', 'textDecoration':'none',
+                                            'fontWeight':'bold'}),
                             href='/Dining'
-                        )
-                    ],
-                    style={'textAlign': 'center', 'margin': '10px', 'backgroundImage': 'url("/assets/dine.jpg")', 'backgroundSize': 'cover', 'backgroundRepeat': 'no-repeat'}
+                        )]                    ,
+                    style={'textAlign': 'center', 'margin': '10px',}
                 ),
                 html.Div(
                     children=[
                         dcc.Link(
+                            html.Div(children = [
                             html.Button(
-                                'Live Events',
+                                '',
                                 id='events_button',
-                                style={'fontSize': '24px', 'backgroundColor': '#fafafa', 'padding': '80px 200px', 'border': 'None'}
+                                style={'fontSize': '24px', 'backgroundColor': '#fafafa', 
+                                       'backgroundImage': 'url("/assets/images/live.jpg")', 'backgroundSize': 'cover', 'backgroundRepeat': 'no-repeat',
+                                       'padding': '150px 150px', 'border': 'None', 'borderRadius':'20px'}
                             ),
+                            html.Div('Live Music',
+                                 style={'fontSize':'16px', 'fontColor':'Red', 'textDecoration':'none'})
+                        ], 
+                        style={'padding':'5px', 'border':'2px solid grey',
+                                            'borderRadius':'20px', 'textDecoration':'none',
+                                            'fontWeight':'bold'}),
                             href='/Live'
                         )
                     ],
-                    style={'textAlign': 'center', 'margin': '10px', 'backgroundImage': 'url("/assets/live.jpg")', 'backgroundSize': 'cover', 'backgroundRepeat': 'no-repeat'}
+                    style={'textAlign': 'center', 'margin': '10px', }
                 )
             ],
             style={'justifyContent': 'center', 'marginTop': '50px', 'alignItems': 'center', 'display': 'flex'}
