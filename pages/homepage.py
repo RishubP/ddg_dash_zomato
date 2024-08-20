@@ -72,13 +72,13 @@ layout = html.Div([
                                 id='delivery_button',
                                 style={'fontSize': '24px', 'backgroundColor': '#fafafa',
                                        'backgroundImage': 'url("/assets/images/del.jpg")', 
-                                       'backgroundSize': 'cover', 'backgroundRepeat': 'no-repeat', 'padding': '150px 150px', 'border': 'None','borderRadius':'20px',
+                                       'backgroundSize': 'cover', 'backgroundRepeat': 'no-repeat', 'padding': '150px 150px', 'border': 'None','borderRadius':'50%',
                                        'textAlign': 'left', 'verticalAlign':'top'}
                             ),
                             html.Div('Deliver food at home',
-                                     style={'fontSize':'16px', 'fontColor':'Red', 'textDecoration':'none'})],
+                                     style={'fontSize':'16px', 'fontColor':'Red', 'textDecoration':'none', 'backgroundColor':'white'})],
                                      style={'padding':'5px', 'border':'2px solid grey',
-                                            'borderRadius':'10px', 'textDecoration':'none',
+                                            'borderRadius':'50%', 'textDecoration':'none',
                                             'fontWeight':'bold'}),
                             href='/Delivery'
                         )
@@ -94,14 +94,14 @@ layout = html.Div([
                                 id='dining_button',
                                 style={'fontSize': '24px', 'backgroundColor': '#fafafa', 
                                         'backgroundImage': 'url("/assets/images/dine.jpg")', 'backgroundSize': 'cover', 'backgroundRepeat': 'no-repeat',
-                                        'padding': '150px 150px', 'border': 'None','borderRadius':'20px'}
+                                        'padding': '150px 150px', 'border': 'None','borderRadius':'50%'}
                             )
                             ,
                         html.Div('Favourite dining venues of the city',
-                                 style={'fontSize':'16px', 'fontColor':'Red', 'textDecoration':'none'})
+                                 style={'fontSize':'16px', 'fontColor':'Red', 'textDecoration':'none','backgroundColor':'white'})
                         ], 
                         style={'padding':'5px', 'border':'2px solid grey',
-                                            'borderRadius':'20px', 'textDecoration':'none',
+                                            'borderRadius':'50%', 'textDecoration':'none',
                                             'fontWeight':'bold'}),
                             href='/Dining'
                         )]                    ,
@@ -116,13 +116,13 @@ layout = html.Div([
                                 id='events_button',
                                 style={'fontSize': '24px', 'backgroundColor': '#fafafa', 
                                        'backgroundImage': 'url("/assets/images/live.jpg")', 'backgroundSize': 'cover', 'backgroundRepeat': 'no-repeat',
-                                       'padding': '150px 150px', 'border': 'None', 'borderRadius':'20px'}
+                                       'padding': '150px 150px', 'border': 'None', 'borderRadius':'50%'}
                             ),
                             html.Div('Live Music',
-                                 style={'fontSize':'16px', 'fontColor':'Red', 'textDecoration':'none'})
+                                 style={'fontSize':'16px', 'fontColor':'Red', 'textDecoration':'none','backgroundColor':'white'})
                         ], 
                         style={'padding':'5px', 'border':'2px solid grey',
-                                            'borderRadius':'20px', 'textDecoration':'none',
+                                            'borderRadius':'50%', 'textDecoration':'none',
                                             'fontWeight':'bold'}),
                             href='/Live'
                         )
@@ -130,7 +130,7 @@ layout = html.Div([
                     style={'textAlign': 'center', 'margin': '10px', }
                 )
             ],
-            style={'justifyContent': 'center', 'marginTop': '50px', 'alignItems': 'center', 'display': 'flex'}
+            style={'justifyContent': 'center', 'marginTop': '50px', 'alignItems': 'center', 'display': 'flex', 'backgroundColor':'white'}
         )
         ]
     )
