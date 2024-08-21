@@ -70,3 +70,23 @@ body {
 #cuisine-list li:hover {
     background-color: #e55d5d;
 }
+
+.ag-theme-alpine .ag-header {
+    background-color: #f1bbbb;  /* Header background color */
+    color: whitesmoke;  /* Header text color */
+    font-size: 16px;  /* Header text size */
+    font-weight: bold;  /* Header text weight */
+}
+
+.ag-theme-alpine .ag-cell {
+    background-color: white;  /* Cell background color */
+    color: #252525;  /* Cell text color */
+}
+
+.ag-theme-alpine .ag-row:hover {
+    background-color: #f0bebe;  /* Row hover background color */
+}
+
+.ag-theme-alpine .ag-root-wrapper {
+    border: 1px solid #ccc;  /* Grid border color */
+}

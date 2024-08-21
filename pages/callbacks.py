@@ -15,6 +15,8 @@ data = pd.read_csv('./data/zomato.csv', encoding= 'ISO-8859-1')
 def display_page(pathname):
     if pathname == '/Delivery':
         return  delivery_layout
+    if pathname == '/delivery3':
+        return  delivery_layout
     elif pathname == '/Dining':
         return dining_layout
     # elif pathname == '/Live':
@@ -39,6 +41,24 @@ def display_page(pathname):
         return delivery_layout
     elif pathname =='/asian':
         return delivery_layout
+    elif pathname =='/conti2':
+        return dining_layout
+    elif pathname =='/italian2':
+        return dining_layout
+    elif pathname =='/japan2':
+        return dining_layout
+    elif pathname =='/seafood2':
+        return dining_layout
+    elif pathname =='/Indian2':
+        return dining_layout
+    elif pathname =='/burger2':
+        return dining_layout
+    elif pathname =='/french2':
+        return dining_layout
+    elif pathname =='/beverages2':
+        return dining_layout
+    elif pathname =='/asian2':
+        return dining_layout
     elif pathname =='/2pizza':
         return dining_layout
     elif pathname =='/2pasta':
@@ -279,3 +299,21 @@ def update_cards(search_value, pathname):
         cards.append(card)
     
     return cards
+
+@app.callback(
+    Output('ag-grid', 'rowData'),
+    [Input('dining_search', 'value')]
+)
+def filter_table(search_value):
+    if not search_value:
+        return data.to_dict('records')
+
+    if search_value:
+        filtered_data = data[
+            data['City'].str.contains(search_value, case=False, na=False) |
+            data['Locality'].str.contains(search_value, case=False, na=False) |
+            data['Cuisines'].str.contains(search_value, case=False, na=False) |
+            data['Restaurant Name'].str.contains(search_value, case=False, na=False)
+        ]
+    
+    return filtered_data.to_dict('records')
